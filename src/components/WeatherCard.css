@@ -1,0 +1,77 @@
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  color: #333;
+  animation: fadeIn 0.6s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.local-time {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.weather-main img {
+  width: 85px;
+  height: 85px;
+}
+
+.weather-main h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.temp {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 0.4rem 0;
+}
+
+.weather-main p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1.8rem;
+  width: 100%;
+}
+
+.details-grid div {
+  background: rgba(240, 248, 255, 0.4);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  color: #333;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
